@@ -1,8 +1,11 @@
 # Photoshop documents
-/PSD
-/node_modules
-/bower_components
-/client/dist
+PSD
+node_modules
+bower_components
+client/dist
+client/styles/*.map
+client/styles/*.css
+.sass-cache/
 
 
 # AUTO GENERATED IGNORE BELOW ____________
