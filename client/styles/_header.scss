@@ -1,0 +1,24 @@
+header {
+	background: url('images/header-image.png');
+	background-size: cover;
+	height: 215px;
+	position: relative;
+	display: block;
+	overflow: auto;
+	z-index: -2;
+
+	&:before {
+		content: '';
+		position: absolute;
+		overflow: auto;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+		z-index: -1;
+	}
+
+	img {
+		display: block;
+		width: 240px;
+		margin: 72px auto 0 auto;
+	}
+}

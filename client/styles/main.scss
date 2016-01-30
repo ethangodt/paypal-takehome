@@ -10,9 +10,13 @@
 //use @include for this
 
 body {
+	//padding-top: 5px; decide whether this top strip looks good later
 	font-family: pp-reg, sans-serif;
-	color: blue;
+	-webkit-font-smoothing: antialiased;
 }
 
 @import "variables";
 @import "components";
+@import "header";
+@import "content";
+@import "footer";
