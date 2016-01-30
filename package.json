@@ -4,8 +4,19 @@
   "description": "PayPal Take Home Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r client/dist && mkdir client/dist",
+    "bower:copy": "mkdir client/dist/vendor && cp bower_components/angular/angular.js client/dist/vendor",
+    "build:css": "node-sass client/styles/main.scss -o client/dist/",
+    "build:js": "cp -a client/scripts/. client/dist",
+    "build": "npm run clean && npm run build:css && npm run bower:copy && npm run build:js",
+    "build:watch": "watch 'npm run build' client --wait=10",
+    "minify": ""
   },
   "author": "Ethan Godt",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "watch": "^0.17.1"
+  }
 }
