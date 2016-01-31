@@ -8,17 +8,14 @@
 
   <link rel="stylesheet" href="styles/main.css"/>
   <script src="dist/vendor/angular.js"></script>
+  <script src="dist/vendor/angular-ui-router.js"></script>
 </head>
 <body>
-  <header>
-    <img src="styles/images/ppcom-white.svg" alt="PayPal Logo">
-  </header>
-  <div class="content">
-    <button>Send Money</button>
-    <button>View Transactions</button>
-  </div>
+  <div ui-view="header"></div>
+  <div ui-view="content"></div>
+  <div id="bottomGradient"></div>
   <footer>
-    <div>What's as;asdfffff</div>
+    <img src="styles/images/colorize-pp-bust.svg" width="30px">
   </footer>
   <script src="scripts/paypal-app.js"></script>
 </body>
