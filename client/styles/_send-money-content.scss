@@ -70,6 +70,10 @@ div.content.send-money {
 			color: $pp-blue;
 		}
 
+		button.checked {
+			background-color: #92f19d;
+		}
+
 		button:first-of-type {
 			border-radius: 5px 5px 0 0;
 			border-bottom: 1px solid #ccc9c9;
