@@ -1,45 +1,86 @@
-input::-webkit-input-placeholder {
-	color: rgba(grey, .3);
-}
+div.content.send-money {
+	label {
+		margin-right: 15px;
+	}
 
-textarea::-webkit-input-placeholder {
-	color: rgba(grey, .3);
-}
+	.inputWrapper {
+		margin-bottom: 15px;
+	}
 
-input[type=email] {
-	height: 40px;
-	font-size: 18px;
-	border: none;
-	background-color: rgba(white, 0);
-	outline: none;
-}
+	input::-webkit-input-placeholder {
+		color: rgba(grey, .3);
+	}
 
-input[type=text] {
-	height: 40px;
-	font-size: 18px;
-	border: none;
-	background-color: rgba(white, 0);
-	outline: none;
-}
+	textarea::-webkit-input-placeholder {
+		color: rgba(grey, .3);
+	}
 
-input[type=number] {
-	height: 40px;
-	font-size: 18px;
-	width: 150px;
-	border: none;
-	background-color: rgba(white, 0);
-	outline: none;
-}
+	input[type=email] {
+		font-size: 18px;
+		border: none;
+		background-color: rgba(white, 0);
+		outline: none;
+		width: calc(100% - 50px);
+	}
 
-textarea {
-	width: 100%;
-	margin-top: 10px;
-	font-size: 18px;
-	border: none;
-	background-color: rgba(white, 0);
-	outline: none;
-}
+	input[type=text] {
+		height: 40px;
+		font-size: 18px;
+		border: none;
+		background-color: rgba(white, 0);
+		outline: none;
+	}
 
-.inputWrapper {
-	margin-bottom: 15px;
+	input[type=number] {
+		font-size: 18px;
+		width: calc(100% - 140px);
+		border: none;
+		background-color: rgba(white, 0);
+		outline: none;
+	}
+
+	select {
+		float: right;
+		margin-top: 3px;
+	}
+
+	textarea {
+		width: 100%;
+		margin-top: 10px;
+		font-size: 18px;
+		border: none;
+		background-color: rgba(white, 0);
+		outline: none;
+	}
+
+	section#paymentPurpose {
+		p {
+			margin-bottom: 10px;
+			color: $pp-blue;
+		}
+
+		// buttons specifically for payment purpose info - overwriting styles
+		button {
+			padding: 20px;
+			font-family: pp-reg, sans-serif;
+			font-size: 14px;
+			text-align: left;
+			background-color: #e5e5e5;
+			box-shadow: 0 3px #ccc9c9;
+			color: $pp-blue;
+		}
+
+		button:first-of-type {
+			border-radius: 5px 5px 0 0;
+			border-bottom: 1px solid #ccc9c9;
+		}
+
+		button:last-of-type {
+			border-radius: 0 0 5px 5px;
+		}
+	}
+
+	div.horizontal-buttons {
+		margin-top: 30px;
+	}
 }
