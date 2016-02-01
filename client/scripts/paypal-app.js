@@ -33,6 +33,7 @@
             templateUrl: 'scripts/send-money/header.tmpl.html'
           },
           content: {
+            controller: 'send-money-ctrl',
             templateUrl: 'scripts/send-money/content.tmpl.html'
           }
           //footer: {

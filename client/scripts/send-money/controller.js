@@ -5,21 +5,16 @@
     .module('paypal-app')
     .controller('send-money-ctrl', controller);
 
-  //controller.$inject
-  function controller () {
+  controller.$inject = ['$scope'];
+  function controller ($scope) {
     var sendCtrl = this;
 
-    sendCtrl.validation = {};
-    sendCtrl.validation.email = function (value) {
-      // check to see if valid email
-        // if not make red x appear
-        // if so make green check appear
-    };
+    //sendCtrl.validation = {};
+    //sendCtrl.validation.email = function (value) {
+    //  $scope.$emit('email:validation', 'passed');
+    //};
 
     // submit transaction button
-
-
-
   }
 
 }());

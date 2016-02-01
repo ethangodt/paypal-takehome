@@ -1,6 +1,6 @@
 div.content.send-money {
 	label {
-		margin-right: 15px;
+		margin-right: 5px;
 	}
 
 	.inputWrapper {
@@ -20,7 +20,7 @@ div.content.send-money {
 		border: none;
 		background-color: rgba(white, 0);
 		outline: none;
-		width: calc(100% - 50px);
+		width: calc(100% - 60px);
 	}
 
 	input[type=text] {
@@ -33,15 +33,29 @@ div.content.send-money {
 
 	input[type=number] {
 		font-size: 18px;
-		width: calc(100% - 140px);
+		width: calc(100% - 165px);
 		border: none;
 		background-color: rgba(white, 0);
 		outline: none;
 	}
 
+	.checkmark {
+		width: 20px;
+		float: right;
+		margin-top: 2px;
+		fill: #3dbd7e;
+	}
+
+	.x {
+		width: 20px;
+		float: right;
+		margin-top: 2px;
+		fill: #d65d62;
+	}
+
 	select {
 		float: right;
-		margin-top: 3px;
+		margin: 3px 10px 0 0;
 	}
 
 	textarea {

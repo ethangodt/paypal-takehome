@@ -2,11 +2,23 @@
   <form>
     <div class="inputWrapper">
       <label for="email">To:</label>
-      <input placeholder="example@email.com" id="email" name="email" title="email" type="email">
+      <input pp-input-validation="email" placeholder="example@email.com" id="email" name="email" title="email" type="email">
+      <svg class="checkmark" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
+        <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3376.2,823.5l-4.5-4.3l1.4-1.4l3.1,2.9l6.1-6.2l1.4,1.4L-3376.2,823.5z"></path>
+      </svg>
+      <svg class="x" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
+	      <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3370.4,825l-4.6-4.5l-4.6,4.6l-1.4-1.4l4.5-4.6l-4.6-4.6l1.4-1.4l4.6,4.5l4.5-4.6l1.4,1.4l-4.5,4.6l4.6,4.5L-3370.4,825z"></path>
+      </svg>
     </div>
     <div class="inputWrapper">
       <label for="amount">Amount:</label>
       <input placeholder="$100.45" id="amount" name="email" title="email" type="number">
+      <svg class="checkmark" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
+        <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3376.2,823.5l-4.5-4.3l1.4-1.4l3.1,2.9l6.1-6.2l1.4,1.4L-3376.2,823.5z"></path>
+      </svg>
+      <svg class="x" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
+	      <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3370.4,825l-4.6-4.5l-4.6,4.6l-1.4-1.4l4.5-4.6l-4.6-4.6l1.4-1.4l4.6,4.5l4.5-4.6l1.4,1.4l-4.5,4.6l4.6,4.5L-3370.4,825z"></path>
+      </svg>
       <select name="currency" title="currency">
         <option value="USD">USD</option>
         <option value="USD">EUR</option>
@@ -18,7 +30,7 @@
       <textarea placeholder="Thanks for the Star Wars tickets..." name="message" id="message" cols="30" rows="3"></textarea>
     </div>
     <section id="paymentPurpose">
-      <p> What's this payment for?:</p>
+      <p> What's this payment for?</p>
       <button radio-buttons>I'm sending money to family or friends</button>
       <button radio-buttons>I'm paying for goods and services</button>
     </section>
