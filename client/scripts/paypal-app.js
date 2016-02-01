@@ -34,10 +34,10 @@
           },
           content: {
             templateUrl: 'scripts/send-money/content.tmpl.html'
-          },
-          footer: {
-            templateUrl: 'scripts/send-money/footer.tmpl.html'
           }
+          //footer: {
+          //  templateUrl: 'scripts/send-money/footer.tmpl.html'
+          //}
         }
       })
       .state('transactions', {
@@ -48,6 +48,9 @@
           },
           content: {
             templateUrl: 'scripts/transactions/content.tmpl.html'
+          },
+          footer: {
+            templateUrl: 'scripts/transactions/footer.tmpl.html'
           }
         }
       })
