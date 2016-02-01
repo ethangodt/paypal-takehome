@@ -1,0 +1,45 @@
+input::-webkit-input-placeholder {
+	color: rgba(grey, .3);
+}
+
+textarea::-webkit-input-placeholder {
+	color: rgba(grey, .3);
+}
+
+input[type=email] {
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	background-color: rgba(white, 0);
+	outline: none;
+}
+
+input[type=text] {
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	background-color: rgba(white, 0);
+	outline: none;
+}
+
+input[type=number] {
+	height: 40px;
+	font-size: 18px;
+	width: 150px;
+	border: none;
+	background-color: rgba(white, 0);
+	outline: none;
+}
+
+textarea {
+	width: 100%;
+	margin-top: 10px;
+	font-size: 18px;
+	border: none;
+	background-color: rgba(white, 0);
+	outline: none;
+}
+
+.inputWrapper {
+	margin-bottom: 15px;
+}

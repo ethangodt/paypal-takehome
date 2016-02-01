@@ -1,0 +1,29 @@
+.transactionContainer {
+	color: $pp-blue;
+	border-bottom: 1px lighten($pp-blue, 50%) solid;
+	padding: 0 0 20px 0;
+	margin-top: 20px;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	// date
+	p:nth-of-type(1) {
+		font-size: 18px;
+	}
+	// payee
+	p:nth-of-type(2) {
+		font-size: 22px;
+	}
+	// amount
+	p:nth-of-type(3) {
+		font-size: 20px;
+		font-family: pp-med, sans-serif;
+	}
+
+}

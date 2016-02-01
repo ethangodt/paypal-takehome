@@ -1,0 +1,12 @@
+// general content styles
+div.content {
+	// this is to ensure a sticky footer: says if page smaller than view port,
+	// force it to be exact height necessary to fill view
+	min-height: calc(100vh - 280px);
+
+	padding: 25px;
+}
+
+label {
+	font-size: 15px;
+}

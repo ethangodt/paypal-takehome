@@ -1,3 +1,44 @@
 button {
 	background-color: $pp-blue;
+	font-family: pp-med, sans-serif;
+	font-size: 20px;
+	border-radius: 30px;
+	color: white;
+	padding: 15px 0;
+	width: 100%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: lighten($pp-blue, 5%);
+}
+
+.inputWrapper {
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+	width: 100%;
+	box-shadow: 0 3px #ccc9c9;
+}
+
+.inputWrapper label {
+	color: $pp-blue;
+}
+
+.horizontal-buttons {
+	overflow: auto;
+
+	button {
+		width: 48%;
+	}
+
+	button:first-of-type {
+		float: left;
+	}
+
+	button:last-of-type {
+		float: right;
+	}
 }

@@ -1,0 +1,30 @@
+<div class="content">
+  <form>
+    <div class="inputWrapper">
+      <label for="email">To:</label>
+      <input placeholder="example@email.com" id="email" name="email" title="email" type="email">
+    </div>
+    <div class="inputWrapper">
+      <label for="email">Amount:</label>
+      <input placeholder="$100.45" id="email" name="email" title="email" type="number">
+      <select name="currency" title="currency">
+        <option value="USD">USD</option>
+        <option value="USD">EUR</option>
+        <option value="JPY">JPY</option>
+      </select>
+    </div>
+    <div class="inputWrapper">
+      <label for="email">Message (optional):</label>
+      <textarea placeholder="For the Alcatraz tour..." name="" id="" cols="30" rows="3"></textarea>
+    </div>
+    <label for="email">What's this payment for?:</label>
+    <div class="inputWrapper">
+      <div>I'm sending money to family or friends</div>
+      <div>I'm paying for goods and services</div>
+    </div>
+    <div class="horizontal-buttons">
+      <a ui-sref="home"><button style="float: left; width: 48%;">Cancel</button></a>
+      <button ng-click="" style="float: right; width: 48%;">Send</button>
+    </div>
+  </form>
+</div>

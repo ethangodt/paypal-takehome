@@ -1,9 +1,7 @@
 header {
 	background: url('images/header-image.png');
 	background-size: cover;
-	height: 215px;
 	position: relative;
-	display: block;
 	overflow: auto;
 	z-index: -2;
 
@@ -15,10 +13,33 @@ header {
 		background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
 		z-index: -1;
 	}
+}
+
+header.main {
+	height: 200px;
+	display: block;
 
 	img {
 		display: block;
 		width: 240px;
-		margin: 72px auto 0 auto;
+		margin: 70px auto 0 auto;
+	}
+}
+
+header.sub {
+	height: 90px;
+	padding: 35px 25px 25px 25px;
+
+	img {
+		width: 80px;
+		margin: 0 auto 0 auto;
+		float: left;
+	}
+
+	h1 {
+		float: right;
+		font-family: pp-med, sans-serif;
+		color: white;
+		font-size: 20px;
 	}
 }

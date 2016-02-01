@@ -13,10 +13,28 @@ body {
 	//padding-top: 5px; decide whether this top strip looks good later
 	font-family: pp-reg, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	position: relative;
 }
 
 @import "variables";
+
+// todo fix this to be sticky footer, etc.
+#bottomGradient {
+	height: 220px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: linear-gradient(to top, rgba($pp-blue, .2), rgba(white,0)) repeat-x;
+}
+
+#bottomGradient {
+	pointer-events: none;
+}
+
 @import "components";
 @import "header";
 @import "content";
 @import "footer";
+@import "homepage-content";
+@import "send-money-content";
+@import "transactions-content";
