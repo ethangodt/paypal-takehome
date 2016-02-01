@@ -33,8 +33,9 @@
             templateUrl: 'scripts/send-money/header.tmpl.html'
           },
           content: {
+            templateUrl: 'scripts/send-money/content.tmpl.html',
             controller: 'send-money-ctrl',
-            templateUrl: 'scripts/send-money/content.tmpl.html'
+            controllerAs: 'sendCtrl'
           }
           //footer: {
           //  templateUrl: 'scripts/send-money/footer.tmpl.html'

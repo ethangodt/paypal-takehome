@@ -17,9 +17,11 @@
         icons.hide();
         if (status === 'passed') {
           icons.filter('.checkmark').show();
-        } else {
-          // validation 'failed'
+        } else if (status === 'failed') {
           icons.filter('.x').show();
+        } else {
+          // validation 'clear'
+          icons.hide();
         }
       });
     };

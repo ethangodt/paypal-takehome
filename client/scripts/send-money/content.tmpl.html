@@ -1,8 +1,8 @@
 <div class="content send-money">
-  <form>
+  <form name="sendCtrl.sendMoneyForm" novalidate>
     <div class="inputWrapper">
       <label for="email">To:</label>
-      <input pp-input-validation="email" placeholder="example@email.com" id="email" name="email" title="email" type="email">
+      <input ng-model="sendCtrl.email" ng-focus="sendCtrl.validation.clearState('email')" ng-blur="sendCtrl.validation.setState('email')" pp-input-validation="email" placeholder="example@email.com" id="email" name="email" title="email" type="email">
       <svg class="checkmark" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
         <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3376.2,823.5l-4.5-4.3l1.4-1.4l3.1,2.9l6.1-6.2l1.4,1.4L-3376.2,823.5z"></path>
       </svg>
@@ -12,7 +12,7 @@
     </div>
     <div class="inputWrapper">
       <label for="amount">Amount:</label>
-      <input placeholder="$100.45" id="amount" name="email" title="email" type="number">
+      <input ng-model="sendCtrl.amount" ng-focus="sendCtrl.validation.clearState('amount')" ng-blur="sendCtrl.validation.setState('amount')" pp-input-validation="amount" min="0.01" placeholder="$100.45" id="amount" name="amount" title="amount" type="number">
       <svg class="checkmark" style="display: none" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3387 807 24 24" style="enable-background:new -3387 807 24 24;" xml:space="preserve">
         <path d="M-3375,807c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S-3368.4,807-3375,807z M-3376.2,823.5l-4.5-4.3l1.4-1.4l3.1,2.9l6.1-6.2l1.4,1.4L-3376.2,823.5z"></path>
       </svg>
