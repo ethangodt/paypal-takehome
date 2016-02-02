@@ -33,15 +33,6 @@ div.content.send-money {
 		width: calc(100% - 165px);
 	}
 
-	//// amount input
-	//input[type=number] {
-	//	font-size: 18px;
-	//	width: calc(100% - 165px);
-	//	border: none;
-	//	background-color: rgba(white, 0);
-	//	outline: none;
-	//}
-
 	.checkmark {
 		width: 20px;
 		float: right;
@@ -123,8 +114,10 @@ div.content.send-money {
 	background: rgba(black, .9);
 
 	img	{
-		display: block;
 		width: 40px;
-		margin: auto;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-20px, -20px);
 	}
 }
