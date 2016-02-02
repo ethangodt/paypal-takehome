@@ -3,7 +3,8 @@
 
   angular
     .module('paypal-app', [
-      'ui.router'
+      'ui.router',
+      'ng-currency'
     ])
     .config(router);
 

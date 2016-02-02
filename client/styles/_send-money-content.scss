@@ -15,7 +15,8 @@ div.content.send-money {
 		color: rgba(grey, .3);
 	}
 
-	input[type=email] {
+	// email input
+	input[name=email] {
 		font-size: 18px;
 		border: none;
 		background-color: rgba(white, 0);
@@ -23,21 +24,23 @@ div.content.send-money {
 		width: calc(100% - 75px);
 	}
 
-	input[type=text] {
-		height: 40px;
+	// amount input
+	input[name=amount] {
 		font-size: 18px;
 		border: none;
 		background-color: rgba(white, 0);
 		outline: none;
+		width: calc(100% - 165px);
 	}
 
-	input[type=number] {
-		font-size: 18px;
-		width: calc(100% - 165px);
-		border: none;
-		background-color: rgba(white, 0);
-		outline: none;
-	}
+	//// amount input
+	//input[type=number] {
+	//	font-size: 18px;
+	//	width: calc(100% - 165px);
+	//	border: none;
+	//	background-color: rgba(white, 0);
+	//	outline: none;
+	//}
 
 	.checkmark {
 		width: 20px;
