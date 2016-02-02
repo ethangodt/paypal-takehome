@@ -61,6 +61,17 @@
       }, 0);
     };
 
+    // CLEAR ----
+    // clears all content in form
+    sendCtrl.clearForms = function () {
+      $('input').add('textarea').val('');
+      $('button[radio-buttons]').removeClass('checked');
+      $scope.$broadcast('email:validation', 'clear');
+      $scope.$broadcast('amount:validation', 'clear');
+      sendCtrl.selectedCurrency = 'USD';
+      sendCtrl.currentCurrencyInfo = currencies[sendCtrl.selectedCurrency];
+    };
+
     // SUBMIT ----
     // simple submission animation to mock loading and redirect to success state
     sendCtrl.handleSubmit = function () {
