@@ -1,7 +1,14 @@
 // this is the tool used to create transactions.json since the transactions must be the same every time
-// it's just meant to be called manually
+// it's meant to be called manually
 
 var fs = require('fs');
+
+var getRandomDate = function () {
+  var year = Math.floor(2012 + Math.random() * 4);
+  var month = Math.floor(1 + Math.random() * 12);
+  var day = Math.floor(Math.random() * 29);
+  return year + '-' + month + '-' + day;
+};
 
 var getRandomPayee = function () {
   var payees = [
@@ -15,7 +22,7 @@ var getRandomPayee = function () {
     'Yummy Donuts',
     'Serious CDs',
     'Super Useless Superpowers',
-    'Maccas',
+    'Macca\'s',
     'Felix\'s',
     'Lasan Indian Cuisine'
   ];
@@ -32,7 +39,7 @@ var getRandomAmount = function () {
 var transactions = [];
 for (var i = 0; i < 250; i++) {
   var newTrans = {
-    date: '2/2/16',
+    date: getRandomDate(),
     payee: getRandomPayee(),
     amount: getRandomAmount()
   };
