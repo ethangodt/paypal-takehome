@@ -25,7 +25,7 @@ var getRandomPayee = function () {
     'Isaac Newton',
     'Mr. Robot Computer Store',
     'Steve Urkel',
-    'Kanye West',
+    'Expensive Vending Machine, inc.',
     'PayPal',
     'NPR',
     'Hooray! Bikes',
@@ -58,3 +58,5 @@ for (var i = 0; i < 250; i++) {
 }
 
 fs.writeFileSync(__dirname + '/transactions.json', JSON.stringify(transactions));
+
+process.exit();

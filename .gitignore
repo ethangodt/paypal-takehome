@@ -1,11 +1,13 @@
 # Photoshop documents
 PSD
 node_modules
-bower_components
+client/bower_components
 client/dist
 client/styles/*.map
 client/styles/*.css
+client/vendor
 .sass-cache/
+server/utils/transactions.json
 
 
 # AUTO GENERATED IGNORE BELOW ____________

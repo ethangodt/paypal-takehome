@@ -2,15 +2,8 @@
 
 var fs = require('fs');
 var transactions = require('../transactions/controller');
-var knex = require('knex')({
-  client: 'mysql',
-  connection: {
-    host     : '127.0.0.1',
-    user     : 'root',
-    password : 'hr',
-    database : 'paypal_takehome'
-  }
-});
+var config = require('./../config');
+var knex = require('knex')(config.knex);
 
 (function() {
   fs.readFile(__dirname + '/transactions.json', 'utf8', function(err, data){
@@ -23,7 +16,11 @@ var knex = require('knex')({
       transactions.create(transData[count])
         .then(function () {
           count++;
-          count < transData.length && promiseLoop();
+          if (count < transData.length) {
+            promiseLoop();
+          } else {
+            process.exit();
+          }
         })
     })();
 
