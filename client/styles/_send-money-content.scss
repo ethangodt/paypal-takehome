@@ -1,4 +1,8 @@
 div.content.send-money {
+	// This is to ensure a sticky footer: if page is smaller than viewport,
+	// force it to be exact height necessary to fill viewport
+	min-height: calc(100vh - 90px);
+
 	.fixInputs {
 		color: #d65d62;
 		margin-bottom: 20px;

@@ -18,7 +18,10 @@
     };
 
     var loadNextPage = function(cb) {
-      // fetches a specific page of transactions from the DB
+      // Fetches a specific page of transactions from the DB
+      // I could wrap in promise instead of using cb
+      // cb exists as a function to call when function finishes regardless
+      // of what happened in the function (fetched or not)
       if (!status.allDownloaded) {
         $http.get('/api/transactions?page=' + status.currentPage)
           .then(function (response) {
@@ -26,13 +29,16 @@
             if (data.length !== 0) {
               transactions = transactions.concat(response.data);
             } else {
+              // All pages must have been downloaded
               status.allDownloaded = true;
             }
             status.currentPage++;
             cb();
           })
+      } else {
+        // fire cb anyway
+        cb();
       }
-      cb();
     };
 
     return {
