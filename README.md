@@ -12,7 +12,7 @@ I've created some tools to get the application up and running. Below is a list o
   - `mysql> CREATE DATABASE paypal-takehome`
   - `mysql> source server/schema.sql`
 - Update config file with your username and password to MySQL
-- `npm start
+- `npm start`
 
 </br>
 
