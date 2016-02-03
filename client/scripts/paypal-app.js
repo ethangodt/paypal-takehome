@@ -39,10 +39,17 @@
             controller: 'send-money-ctrl',
             controllerAs: 'sendCtrl'
           }
-          //todo decide if you want this
-          //footer: {
-          //  templateUrl: 'scripts/send-money/footer.tmpl.html'
-          //}
+        }
+      })
+      .state('confirmation', {
+        url: '/confirmation',
+        views: {
+          content: {
+            templateUrl: 'scripts/confirmation/content.tmpl.html',
+          },
+          footer: {
+            templateUrl: 'scripts/confirmation/footer.tmpl.html'
+          }
         }
       })
       .state('transactions', {

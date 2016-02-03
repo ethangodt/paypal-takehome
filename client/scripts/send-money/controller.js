@@ -55,6 +55,7 @@
       $scope.$broadcast('amount:validation', 'clear');
       sendCtrl.selectedCurrency = 'USD';
       sendCtrl.currentCurrencyInfo = currencies[sendCtrl.selectedCurrency];
+      sendCtrl.fixInputs = false;
     };
 
     // SUBMIT

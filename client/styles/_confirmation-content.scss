@@ -1,0 +1,19 @@
+.content.confirmation {
+	padding-top: 70px;
+	text-align: center;
+
+	p {
+		color: $pp-blue;
+		font-size: 18px;
+	}
+
+	svg {
+		margin: 20px 0 60px 0;
+		width: 50px;
+		fill: #3C8843;
+	}
+
+	button {
+		margin-bottom: 20px;
+	}
+}
