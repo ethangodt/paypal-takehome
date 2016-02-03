@@ -4,8 +4,8 @@
     .module('paypal-app')
     .factory('transactionsModel', transactionsModel);
 
-  transactionsModel.$inject = ['$http', 'API_ENDPOINT_URL'];
-  function transactionsModel ($http, API_ENDPOINT_URL) {
+  transactionsModel.$inject = ['$http'];
+  function transactionsModel ($http) {
     var transactions = [];
 
     var status = {

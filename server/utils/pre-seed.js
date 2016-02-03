@@ -23,8 +23,8 @@ var getRandomDate = function () {
 var getRandomPayee = function () {
   var payees = [
     'Isaac Newton',
-    'Mr. Robot',
-    'POTUS',
+    'Mr. Robot Computer Store',
+    'Steve Urkel',
     'Kanye West',
     'PayPal',
     'NPR',
@@ -33,7 +33,7 @@ var getRandomPayee = function () {
     'Serious CDs',
     'Super Useless Superpowers',
     'Macca\'s',
-    'Felix\'s',
+    'Felix\'s Pizza',
     'Lasan Indian Cuisine'
   ];
 

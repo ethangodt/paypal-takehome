@@ -6,8 +6,7 @@
       'ui.router',
       'ng-currency'
     ])
-    .config(router)
-    .constant('API_ENDPOINT_URL', 'localhost:8080/api');
+    .config(router);
 
   router.$inject = ['$stateProvider', '$urlRouterProvider'];
   function router($stateProvider, $urlRouterProvider) {
