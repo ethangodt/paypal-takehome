@@ -14,5 +14,5 @@ app.use(express.static(__dirname + '/../client'));
 app.use('/api', api);
 
 app.listen(8080, function() {
-  console.log('Port listening on port' + 8080);
+  console.log('Port listening on port ' + 8080);
 });

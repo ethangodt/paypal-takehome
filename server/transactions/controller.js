@@ -32,7 +32,8 @@ function create (trans) {
       return knex('transactions').insert({
           amount: trans.amount,
           payee_id: payeeId,
-          trans_date: trans.date
+          trans_date: trans.date,
+          currency: trans.currency
         })
     });
 

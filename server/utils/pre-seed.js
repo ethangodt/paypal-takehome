@@ -3,6 +3,16 @@
 
 var fs = require('fs');
 
+var getRandomCurrency = function () {
+  var currencies = [
+    'USD',
+    'EUR',
+    'JPY'
+  ];
+
+  return currencies[Math.floor(Math.random() * 3)]
+};
+
 var getRandomDate = function () {
   var year = Math.floor(2012 + Math.random() * 4);
   var month = Math.floor(1 + Math.random() * 12);
@@ -41,7 +51,8 @@ for (var i = 0; i < 250; i++) {
   var newTrans = {
     date: getRandomDate(),
     payee: getRandomPayee(),
-    amount: getRandomAmount()
+    amount: getRandomAmount(),
+    currency: getRandomCurrency()
   };
   transactions.push(newTrans)
 }

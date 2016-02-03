@@ -15,6 +15,7 @@ CREATE TABLE transactions (
   amount numeric(15,2) NOT NULL,
   payee_id int NOT NULL,
   trans_date date,
+  currency varchar(3),
   FOREIGN KEY (payee_id) REFERENCES payees(id),
   PRIMARY KEY (id)
 );

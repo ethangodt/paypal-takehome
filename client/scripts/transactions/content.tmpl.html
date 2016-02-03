@@ -2,7 +2,7 @@
   <div ng-repeat="tran in transCtrl.trans" class="transactionContainer">
     <p>{{ tran.trans_date | date }}</p>
     <p>{{ tran.name }}</p>
-    <p>{{ tran.amount | currency }}</p>
+    <p>{{ tran.amount | currency: transCtrl.currencies[tran.currency].symbol }}</p>
   </div>
 </div>
 <div id="whiteGradient"></div>

@@ -5,9 +5,13 @@
     .module('paypal-app')
     .controller('transactions-ctrl', controller);
 
-  controller.$inject = ['$scope', 'transactionsModel', '$timeout'];
-  function controller ($scope, transactionsModel, $timeout) {
+  controller.$inject = ['$scope', 'transactionsModel', 'currencies'];
+  function controller ($scope, transactionsModel, currencies) {
     var transCtrl = this;
+
+    transCtrl.currencies = currencies;
+
+    // INFINITE SCROLLING AND TRANSACTION FETCHING
     transactionsModel.loadNextPage(function(){
         transCtrl.trans = transactionsModel.get();
         console.log(transCtrl.trans);
@@ -25,6 +29,7 @@
         }
       });
     });
+
 
   }
 

@@ -5,8 +5,8 @@
     .module('paypal-app')
     .controller('send-money-ctrl', controller);
 
-  controller.$inject = ['$scope', '$timeout', '$state'];
-  function controller ($scope, $timeout, $state) {
+  controller.$inject = ['$scope', '$timeout', '$state', 'currencies'];
+  function controller ($scope, $timeout, $state, currencies) {
     var sendCtrl = this;
 
     // VALIDATION ----
@@ -32,23 +32,6 @@
       }
     };
 
-    // CURRENCY DISPLAY TOOLS ----
-    // the ng-currency directive is handling input formatting of currency information
-    // it and the placeholder attr require some currency information
-    var currencies = {
-      USD: {
-        symbol: '$',
-        example: '$3.14'
-      },
-      EUR: {
-        symbol: '€',
-        example: '€3,14'
-      },
-      JPY: {
-        symbol: '¥',
-        example: '¥3,14'
-      }
-    };
     // currency defaults to USD on page load
     sendCtrl.currentCurrencyInfo = currencies.USD;
     // sendCtrl.selectedCurrency is used only to track the selected option
