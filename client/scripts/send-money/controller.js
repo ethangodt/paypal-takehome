@@ -70,8 +70,7 @@
         var $loadingOverlay = $('.loadingOverlay');
         $loadingOverlay.show();
         $timeout(function () {
-          // todo make this go to finished page
-          $state.go('home');
+          $state.go('confirmation');
         }, 1500);
       } else {
         sendCtrl.fixInputs = true;

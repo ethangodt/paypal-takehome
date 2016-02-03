@@ -6,7 +6,7 @@ var config = {
       host: '127.0.0.1',
       user: 'root', // update
       password: 'hr', // update
-      database: 'paypal_takehome'
+      database: 'paypal_takehome' //update if not paypal_takehome
     }
   }
 };
