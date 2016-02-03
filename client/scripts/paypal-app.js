@@ -6,7 +6,8 @@
       'ui.router',
       'ng-currency'
     ])
-    .config(router);
+    .config(router)
+    .constant('API_ENDPOINT_URL', 'localhost:8080/api');
 
   router.$inject = ['$stateProvider', '$urlRouterProvider'];
   function router($stateProvider, $urlRouterProvider) {
@@ -38,6 +39,7 @@
             controller: 'send-money-ctrl',
             controllerAs: 'sendCtrl'
           }
+          //todo decide if you want this
           //footer: {
           //  templateUrl: 'scripts/send-money/footer.tmpl.html'
           //}
@@ -50,7 +52,9 @@
             templateUrl: 'scripts/transactions/header.tmpl.html'
           },
           content: {
-            templateUrl: 'scripts/transactions/content.tmpl.html'
+            templateUrl: 'scripts/transactions/content.tmpl.html',
+            controller: 'transactions-ctrl',
+            controllerAs: 'transCtrl'
           },
           footer: {
             templateUrl: 'scripts/transactions/footer.tmpl.html'
