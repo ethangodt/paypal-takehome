@@ -15,11 +15,11 @@
       },
       EUR: {
         symbol: '€',
-        example: '€3,14'
+        example: '€3.14'
       },
       JPY: {
         symbol: '¥',
-        example: '¥3,14'
+        example: '¥3.14'
       }
     };
   }

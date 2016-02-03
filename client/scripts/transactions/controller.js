@@ -17,6 +17,7 @@
         console.log(transCtrl.trans);
       });
 
+    // drop the event on change
     $scope.$on('$viewContentLoaded', function() {
       var $window = $(window);
       var $content = $('.content.transactions');

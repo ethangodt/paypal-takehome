@@ -9,7 +9,7 @@
   function controller ($scope, $timeout, $state, currencies) {
     var sendCtrl = this;
 
-    // VALIDATION ----
+    // VALIDATION
     // validation functions work in unison with simple pp-input-validation directive
     // if an input is valid on blur, the correct event is broadcast to initiate
     // pp specific DOM manipulation through directive
@@ -32,6 +32,7 @@
       }
     };
 
+    // CURRENCY SELECTION
     // currency defaults to USD on page load
     sendCtrl.currentCurrencyInfo = currencies.USD;
     // sendCtrl.selectedCurrency is used only to track the selected option
@@ -44,9 +45,10 @@
       }, 0);
     };
 
-    // CLEAR ----
+    // CLEAR
     // clears all content in form
     sendCtrl.clearForms = function () {
+      // a better solution here might be to set up the $setPrestine function on the form
       $('input').add('textarea').val('');
       $('button[radio-buttons]').removeClass('checked');
       $scope.$broadcast('email:validation', 'clear');
@@ -55,15 +57,24 @@
       sendCtrl.currentCurrencyInfo = currencies[sendCtrl.selectedCurrency];
     };
 
-    // SUBMIT ----
+    // SUBMIT
     // simple submission animation to mock loading and redirect to success state
     sendCtrl.handleSubmit = function () {
-      var $loadingOverlay = $('.loadingOverlay');
-      $loadingOverlay.show();
-      $timeout(function () {
-        // todo make this go to finished page
-        $state.go('home');
-      }, 1500);
+      var emailIsValid = sendCtrl.sendMoneyForm.email.$valid,
+          amountIsValid = sendCtrl.sendMoneyForm.amount.$valid,
+          purposeIsSelected = $('button[radio-buttons]').filter('.checked').length > 0;
+
+      // ideally I would not be using this class to check to see if something was selected
+      if (emailIsValid && amountIsValid && purposeIsSelected) {
+        var $loadingOverlay = $('.loadingOverlay');
+        $loadingOverlay.show();
+        $timeout(function () {
+          // todo make this go to finished page
+          $state.go('home');
+        }, 1500);
+      } else {
+        sendCtrl.fixInputs = true;
+      }
     }
   }
 
