@@ -9,7 +9,7 @@ I've created some tools to get the application up and running. Below is a list o
 - `bower install`
 - Run `mysql.server start`
 - Run `mysql -u <username> -p`
-  - `mysql> CREATE DATABASE paypal_stakehome`
+  - `mysql> CREATE DATABASE paypal_takehome`
   - `mysql> source server/schema.sql`
 - Update config file with your username and password to MySQL
 - `npm start`
