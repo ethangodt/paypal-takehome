@@ -5,11 +5,11 @@ Hey! Here is the repo for the paypal take home project I was given. I worked har
 I've created some tools to get the application up and running. Below is a list of instructions to get it running on your machine. Let me know if something is broken at ethan@ethangodt.com.
 
 - Clone repo & `cd` to project root
-- `npm install` (outside of npm modules you'll also need `sass`)
+- `npm install`
 - `bower install`
 - Run `mysql.server start`
 - Run `mysql -u <username> -p`
-  - `mysql> CREATE DATABASE paypal-takehome`
+  - `mysql> CREATE DATABASE paypal_stakehome`
   - `mysql> source server/schema.sql`
 - Update config file with your username and password to MySQL
 - `npm start`
