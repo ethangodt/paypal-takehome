@@ -8,6 +8,7 @@ client/styles/*.css
 client/vendor
 .sass-cache/
 server/utils/transactions.json
+screenshots/
 
 
 # AUTO GENERATED IGNORE BELOW ____________
