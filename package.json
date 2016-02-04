@@ -4,21 +4,19 @@
   "description": "PayPal Take Home Project",
   "main": "index.js",
   "scripts": {
-    "prestart": "node server/utils/pre-seed.js && node server/utils/seed.js && sass client/styles/main.scss client/styles/main.css",
+    "compile-sass": "./node_modules/node-sass/bin/node-sass client/styles/main.scss client/styles/main.css",
+    "prestart": "node server/utils/pre-seed.js && node server/utils/seed.js && npm run compile-sass",
     "start": "node server/server.js"
   },
   "author": "Ethan Godt",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^3.4.2",
-    "watch": "^0.17.1"
+    "node-sass": "^3.4.2"
   },
   "dependencies": {
-    "bookshelf": "^0.9.1",
     "compression": "^1.6.1",
     "express": "^4.13.4",
     "knex": "^0.9.0",
-    "mysql": "^2.10.2",
-    "sqlite3": "^3.1.1"
+    "mysql": "^2.10.2"
   }
 }
